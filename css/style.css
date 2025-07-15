@@ -1,10 +1,18 @@
-
+* {
+padding: 0;
+margin: 0;
+}
 
 body {
     box-sizing: border-box;
     background-image: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
     font-family: Arial;
     color: #fff;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 27px 100px 0;
 }
 
 .headerp{
@@ -25,29 +33,37 @@ a {
 }
 
 .ul1{
+    display: flex;
+    align-items: center;
     opacity: 0.302;
-    width: 438px;
-    height: 40px;
+    min-width: 438px;
+    min-height: 41px;
     border-radius: 20px;
     background-color: #acacaa;
 }
-    
+
+.ul1 a{
+color: #fff;
+font-size: 14px;
+line-height: 30px;
+}
+
+.tel{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.main_text{
+display: flex;
+align-items: center;
+}
+
 h1 {
     box-sizing: border-box;
     max-width: 687px;
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 800;
-}
-
-.main_text {
-    align-items: center;
-}
-
-.ball{
-    display: flex;
-    justify-content: flex-end;
-    
 }
 
 .signup-btn {
@@ -93,6 +109,11 @@ footer{
     color: #1e3c6f;;
     background-color: #f4d633;
     
+}
+
+.imgs{
+    display: flex;
+    align-items: center;
 }
 
 .logocopy {
