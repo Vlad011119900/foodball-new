@@ -35,11 +35,10 @@ a {
 .ul1{
     display: flex;
     align-items: center;
-    opacity: 0.302;
     min-width: 438px;
-    min-height: 41px;
     border-radius: 20px;
-    background-color: #acacaa;
+    padding: 10px 56px;
+    background-color: rgba(76, 100, 137, 0.302)
 }
 
 .ul1 a{
@@ -67,15 +66,20 @@ h1 {
 }
 
 .signup-btn {
-    box-sizing: border-box;
-    background: transparent;
     font-size: 18px;
-    text-transform: none;
+    text-transform: uppercase;
     text-decoration: none;
+    font-weight: bold;
     color: #f4d633;
-    border: 2px solid #f4d633;
+    border: 3px solid #f4d633;
     max-width: 340px;
     border-radius: 35px;
+    padding: 18px 28px;
+}
+
+.signup-btn{
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
@@ -103,12 +107,28 @@ nav a {
     font-weight: bold;
 }
 
+.ball {
+    display: flex;
+justify-content: flex-end;
+}
+
 footer{
     padding: 14px 15px;
     font-size: 16px;
     color: #1e3c6f;;
     background-color: #f4d633;
     
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+}
+
+.footer-time{
+    display: flex;
+    justify-content: flex-start;
+    gap: 13px;
 }
 
 .imgs{
@@ -118,4 +138,13 @@ footer{
 
 .logocopy {
     min-height: 37px;
+}
+
+.logocopy p {
+    display: flex;
+    font-size: 12px;
+    color: #204075;
+    font-family: "Arial";
+    text-align: left;
+    justify-content: flex-end;
 }
