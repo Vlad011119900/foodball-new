@@ -12,7 +12,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    padding: 27px 100px 0;
+    max-width: 1000px;
 }
 
 .headerp{
@@ -38,7 +38,7 @@ a {
     min-width: 438px;
     border-radius: 20px;
     padding: 10px 56px;
-    background-color: rgba(76, 100, 137, 1)
+    background-color: rgba(172, 172, 170, 0.3)
 }
 
 .ul1 a{
@@ -111,12 +111,6 @@ nav a {
 .ball {
     display: flex;
 justify-content: flex-end;
-}
-
-.wrapper2 {
-    margin: 0 auto;
-    padding: 27px 100px 0;
-    background-color: #f4d633;
 }
 
 footer{
