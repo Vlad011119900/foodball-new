@@ -38,7 +38,7 @@ a {
     min-width: 438px;
     border-radius: 20px;
     padding: 10px 56px;
-    background-color: rgba(76, 100, 137, 0.302)
+    background-color: rgba(76, 100, 137, 1)
 }
 
 .ul1 a{
@@ -78,8 +78,9 @@ h1 {
 }
 
 .signup-btn{
-    display: flex;
-    gap: 15px;
+    display: block;
+    margin: 25px 0;
+    text-align: center;
 }
 
 nav a {
@@ -112,6 +113,12 @@ nav a {
 justify-content: flex-end;
 }
 
+.wrapper2 {
+    margin: 0 auto;
+    padding: 27px 100px 0;
+    background-color: #f4d633;
+}
+
 footer{
     padding: 14px 15px;
     font-size: 16px;
@@ -126,14 +133,17 @@ footer{
 }
 
 .footer-time{
-    display: flex;
-    justify-content: flex-start;
-    gap: 13px;
+    font-size: 16px;
+    line-height: 14px;
+    color: #1e3c6f;
+    font-weight: bold;
+    font-family: "Arial";
 }
 
 .imgs{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .logocopy {
