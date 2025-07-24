@@ -23,6 +23,9 @@ body a{
     max-width: 1000px;
 }
 
+header{
+    padding-top: 19px;
+}
 
 .headerp{
     min-width: 167px;
@@ -171,6 +174,10 @@ footer{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+li img{
+    transition: .9s;
 }
 
 li:hover img{
