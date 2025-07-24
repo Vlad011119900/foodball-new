@@ -15,6 +15,10 @@ body {
     max-width: 1000px;
 }
 
+header{
+    margin-top: 20px;
+}
+
 .headerp{
     min-width: 167px;
 }
@@ -53,8 +57,8 @@ line-height: 30px;
     gap: 20px;
 }
 .main_text{
-display: flex;
-align-items: center;
+    display: flex;
+    align-items:center;
 }
 
 h1 {
