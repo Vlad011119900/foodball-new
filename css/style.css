@@ -1,6 +1,6 @@
 * {
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -10,11 +10,11 @@ body {
     color: #fff;
 }
 
-body{ 
+body {
     cursor: url('../img/cursor.cur'), auto;
 }
 
-body a{ 
+body a {
     cursor: url('../img/cursor2.cur'), auto;
 }
 
@@ -23,16 +23,17 @@ body a{
     max-width: 1000px;
 }
 
-.header{
+.header {
     position: relative;
+    flex-wrap: wrap;
 }
 
-header{
+header {
     padding-top: 19px;
     margin-bottom: 153px;
 }
 
-.headerp{
+.headerp {
     min-width: 167px;
 }
 
@@ -42,14 +43,14 @@ ul {
 
 a {
     list-style: none;
-}                   
+}
 
-.flex{
+.flex {
     display: flex;
     justify-content: space-between;
 }
 
-.ul1{
+.ul1 {
     display: flex;
     align-items: center;
     min-width: 438px;
@@ -58,47 +59,49 @@ a {
     background-color: rgba(172, 172, 170, 0.3)
 }
 
-.ul1 a{
-    transition: .5s;    
+.ul1 a {
+    transition: .5s;
 }
 
-li:hover>a{
+li:hover>a {
     color: #f4d633;
 }
 
-.ul1 a{
+.ul1 a {
     color: #fff;
     font-size: 14px;
     line-height: 30px;
     text-decoration: none;
 }
 
-.tel{
+.tel {
     display: flex;
     align-items: center;
     gap: 20px;
+    font-size: 16px;
+    line-height: 50px;
 }
 
-.tel a{
-transition: .5s;
+.tel a {
+    transition: .5s;
 }
 
-.tel:hover>a{
+.tel:hover>a {
     color: #f4d633;
 }
 
-.main{
+.main {
     margin-bottom: 130px;
 }
 
-.main_text{
+.main_text {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 h1 {
     box-sizing: border-box;
-    max-width: 687px;
+    max-width: 692px;
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 800;
@@ -116,14 +119,14 @@ h1 {
     padding: 18px 28px;
 }
 
-.signup-btn{
+.signup-btn {
     display: block;
     margin: 25px 0;
     text-align: center;
     transition: .7s;
 }
 
-.signup-btn:hover{
+.signup-btn:hover {
     color: #fff;
     background-color: #f4d633;
 }
@@ -142,6 +145,10 @@ nav a {
     color: #fff;
 }
 
+.main_text i {
+    font-size: 16px;
+}
+
 .text {
     box-sizing: border-box;
     font-size: 30px;
@@ -157,26 +164,27 @@ nav a {
     position: absolute;
     content: "";
     z-index: -1;
-    top: 73px;
     right: 0%;
+    bottom: 0%;
 }
 
-footer{
+footer {
     padding: 14px 15px;
     font-size: 16px;
-    color: #1e3c6f;;
+    color: #1e3c6f;
+    ;
     background-color: #f4d633;
-    
+
 }
 
-.footer{
+.footer {
     position: relative;
     z-index: 1;
     display: flex;
     align-items: center;
 }
 
-.footer-time{
+.footer-time {
     font-size: 16px;
     line-height: 14px;
     color: #1e3c6f;
@@ -184,21 +192,21 @@ footer{
     font-family: "Arial";
 }
 
-.aaa{
+.aaa {
     margin-bottom: 13px;
 }
 
-.imgs{
+.imgs {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-li img{
+li img {
     transition: .9s;
 }
 
-li:hover img{
+li:hover img {
     transform: scale(1.2);
 }
 
@@ -213,4 +221,109 @@ li:hover img{
     font-family: "Arial";
     text-align: left;
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: .9px;
+    }
+
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding-top: 19px;
+        margin-bottom: 35px;
+    }
+
+    .ul1 {
+        display: flex;
+        align-items: center;
+        min-width: 300px;
+        border-radius: 20px;
+        padding: 10px 10px;
+        background-color: rgba(172, 172, 170, 0.3)
+    }
+
+    .ball {
+        position: absolute;
+        max-width: 280px;
+        content: "";
+        z-index: -1;
+        right: 0%;
+        bottom: 0%;
+    }
+
+    h1 {
+        box-sizing: border-box;
+        max-width: 230px;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    .text {
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+    .main_text i {
+        font-size: 10px;
+    }
+
+    .signup-btn {
+        font-size: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        color: #f4d633;
+        border: 3px solid #f4d633;
+        max-width: 100px;
+        border-radius: 35px;
+        padding: 12px 8px;
+    }
+
+    .signup-btn {
+        display: block;
+        margin: 15px 0;
+        transition: .7s;
+    }
+
+    .aaa {
+        margin-bottom: 13px;
+        font-size: 10px;
+        min-width: 50px;
+    }
+
+    .bbb {
+        font-size: 10px;
+        min-width: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 1px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 1.1px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 1.5px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    html {
+        font-size: 1.7px;
+    }
 }
