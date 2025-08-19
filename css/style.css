@@ -156,11 +156,20 @@ ul {
     transition: .5s;
 }
 
+.tel img{
+    transition: 1s;
+}
+
 .tel:hover>a {
     color: #f4d633;
 }
 
+.tel:hover img {
+    transform: scale(1.1);
+}
+
 .main {
+    position: relative;
     margin-bottom: 130rem;
 }
 
@@ -235,7 +244,7 @@ nav a {
     content: "";
     z-index: -1;
     right: 0%;
-    bottom: 0%;
+    bottom: -45%;
 }
 
 footer {
