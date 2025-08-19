@@ -13,4 +13,3 @@ function cancelBurger() {
 }
 cancel.addEventListener("click", cancelBurger)
 dark.addEventListener("click", cancelBurger)
-
