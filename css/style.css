@@ -309,7 +309,8 @@ footer {
     gap: 10rem;
 }
 
-.imgs-img {
+.imgs-img img{
+    display: block;
     min-width: 15rem
 }
 
