@@ -33,6 +33,10 @@ body a {
     gap: 10px;
 }
 
+.logo-mobile img {
+    width: 160rem;
+}
+
 ul,
 p {
     margin: 0;
@@ -151,7 +155,7 @@ a {
 
 header {
     padding-top: 19rem;
-    margin-bottom: 153rem;
+    margin-bottom: 25rem;
 }
 
 .headerp {
@@ -188,7 +192,7 @@ ul {
 
 .main {
     position: relative;
-    margin-bottom: 130rem;
+    margin-bottom: 20rem;
 }
 
 .main_text {
@@ -198,8 +202,8 @@ ul {
 
 h1 {
     box-sizing: border-box;
-    max-width: 692rem;
-    font-size: 48rem;
+    max-width: 320rem;
+    font-size: 38rem;
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -258,6 +262,7 @@ nav a {
 }
 
 .ball {
+    display: none;
     position: absolute;
     content: "";
     z-index: -1;
@@ -289,14 +294,23 @@ footer {
     font-family: "Arial";
 }
 
-.aaa {
+.footer-p1 {
     margin-bottom: 13rem;
+}
+
+.footer-p {
+    font-size: 9rem;
+    min-width: none;
 }
 
 .imgs {
     display: flex;
     align-items: center;
     gap: 10rem;
+}
+
+.imgs-img {
+    min-width: 15rem
 }
 
 li img {
@@ -320,11 +334,25 @@ li:hover img {
     justify-content: flex-end;
 }
 
-@media screen and (min-width: 500px) {}
+@media screen and (min-width: 700px) {
+    .ball {
+        display: block;
+    }
+}
 
 @media screen and (min-width: 768px) {
     html {
         font-size: .9px;
+    }
+
+    header {
+        padding-top: 19rem;
+        margin-bottom: 153rem;
+    }
+
+    .main {
+        position: relative;
+        margin-bottom: 130rem;
     }
 
     .burger {
@@ -355,6 +383,27 @@ li:hover img {
 
     .cancel {
         display: none;
+    }
+
+    h1 {
+        box-sizing: border-box;
+        max-width: 692rem;
+        font-size: 48rem;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    .logo-mobile img {
+        min-width: 167rem;
+    }
+
+    .footer-p {
+        font-size: 16rem;
+        line-height: 14rem;
+    }
+
+    .imgs-img {
+        min-width: 25rem
     }
 }
 
