@@ -192,7 +192,7 @@ ul {
 
 .main {
     position: relative;
-    margin-bottom: 20rem;
+    margin-bottom: 70rem;
 }
 
 .main_text {
@@ -281,7 +281,7 @@ footer {
 
 .footer {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     display: flex;
     align-items: center;
 }
