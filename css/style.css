@@ -27,6 +27,12 @@ body a {
     max-width: 1000rem;
 }
 
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 ul,
 p {
     margin: 0;
@@ -47,7 +53,7 @@ a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4rem);
+    backdrop-filter: blur(4px);
     z-index: 1;
 }
 
@@ -56,75 +62,91 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 10rem;
+    column-gap: 10px;
 }
 
 .burger {
-    width: 50rem;
+    width: 50px;
     height: 100%;
     cursor: pointer;
 }
 
 .bord {
     display: block;
-    margin: 4rem;
-    width: 30rem;
-    height: 5rem;
-    border-radius: 2rem;
+    margin: 4px;
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
     background-color: #fff;
     transition: all 1s ease;
 }
 
 .burger:hover>.b1 {
-    transform: translateX(20rem);
+    transform: translateX(20px);
 }
 
 .burger:hover>.b2 {
-    transform: translateX(10rem);
+    transform: translateX(10px);
 }
 
 .b1 {
-    width: 20rem;
+    width: 20px;
 }
 
 .b2 {
-    width: 30rem;
+    width: 30px;
 }
 
 .b3 {
-    width: 40rem;
-    top: 10rem;
+    width: 40px;
+    top: 10px;
 }
 
 .menu {
     position: absolute;
     top: 0;
-    left: -100%;
+    left: -1000%;
     z-index: 2;
-    background-color: aqua;
+    background-color: rgba(172, 172, 170, 0.3);
+    border: rgba(30, 30, 30, 0.3) 3px solid;
     transition: all .5s ease;
+}
+
+.menu a {
+    font-size: 14rem;
+    line-height: 30rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Arial";
 }
 
 .cancel {
     position: absolute;
-    top: -10rem;
-    right: 5rem;
+    font-size: 15rem;
+    top: -10px;
+    left: 5px;
     cursor: pointer;
 }
 
 .top-line {
-    padding: 15rem 10rem;
-    background-color: pink;
+    padding: 15px 10px;
+    max-width: 438px;
+    border-radius: 20px;
+    background-color: rgba(172, 172, 170, 0.3);
 }
 
 .menu li {
 
-    padding: 15rem 10rem;
+    padding: 15px 10px;
 }
+
 
 .header {
     position: relative;
     flex-wrap: wrap;
+    display: flex;
+    align-items: center;
 }
 
 header {
@@ -140,10 +162,6 @@ ul {
     list-style: none;
 }
 
-.menu {
-    display: none;
-}
-
 .tel {
     display: flex;
     align-items: center;
@@ -156,7 +174,7 @@ ul {
     transition: .5s;
 }
 
-.tel img{
+.tel img {
     transition: 1s;
 }
 
@@ -302,25 +320,37 @@ li:hover img {
     justify-content: flex-end;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: .9px;
+    }
+
     .burger {
         display: none;
     }
 
     .top-line {
-        padding: 0 10px;
+        background-color: transparent;
     }
 
     .menu {
+        width: 100%;
         position: static;
         display: flex;
         justify-content: space-between;
         column-gap: 10px;
-        background-color: pink;
+        background-color: transparent;
+        padding: 5px 10px;
+        min-width: 338px;
+        border-radius: 20px;
+        background-color: rgba(172, 172, 170, 0.3);
+        border: none;
     }
 
     .menu li {
-        padding: 15px 10px;
+        padding: 0 10px;
     }
 
     .cancel {
@@ -328,15 +358,13 @@ li:hover img {
     }
 }
 
-@media screen and (min-width: 768px) {
-    html {
-        font-size: .9px;
-    }
-}
-
 @media screen and (min-width: 1024px) {
     html {
         font-size: 1px;
+    }
+
+    .menu {
+        min-width: 438px;
     }
 }
 
@@ -348,12 +376,12 @@ li:hover img {
 
 @media screen and (min-width: 1920px) {
     html {
-        font-size: 1.5px;
+        font-size: 1.3px;
     }
 }
 
 @media screen and (min-width: 2200px) {
     html {
-        font-size: 1.7px;
+        font-size: 1.5px;
     }
 }

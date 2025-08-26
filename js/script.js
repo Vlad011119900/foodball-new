@@ -8,8 +8,9 @@ burger.addEventListener("click", function() {
   dark.style.display = "block"
 })
 function cancelBurger() {
-  menu.style.left = "-100%";
+  menu.style.left = "-1000%";
   dark.style.display = "none"
 }
 cancel.addEventListener("click", cancelBurger)
 dark.addEventListener("click", cancelBurger)
+
