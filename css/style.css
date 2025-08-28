@@ -24,6 +24,7 @@ body a {
 
 .wrapper {
     margin: 0 auto;
+    padding: 0 15rem;
     max-width: 1000rem;
 }
 
@@ -107,7 +108,7 @@ a {
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -1000%;
     z-index: 2;
@@ -129,13 +130,12 @@ a {
     position: absolute;
     font-size: 15rem;
     top: -10px;
-    left: 5px;
+    right: 5px;
     cursor: pointer;
 }
 
 .top-line {
     padding: 15px 10px;
-    max-width: 438px;
     border-radius: 20px;
     background-color: rgba(172, 172, 170, 0.3);
 }
@@ -169,9 +169,9 @@ ul {
 .tel {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20rem;
     font-size: 16rem;
-    line-height: 50rem;
 }
 
 .tel a {
@@ -203,7 +203,7 @@ ul {
 h1 {
     box-sizing: border-box;
     max-width: 320rem;
-    font-size: 38rem;
+    font-size: 30rem;
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -252,13 +252,24 @@ nav a {
 
 .text {
     box-sizing: border-box;
-    font-size: 30rem;
+    font-size: 20rem;
 }
 
 .text2 {
     box-sizing: border-box;
-    font-size: 20rem;
+    font-size: 15rem;
     font-weight: bold;
+}
+
+.text2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text2 img {
+    display: inline-block;
+    max-width: 99rem;
 }
 
 .ball {
@@ -271,10 +282,9 @@ nav a {
 }
 
 footer {
-    padding: 14rem 15rem;
+    padding: 14rem 0;
     font-size: 16rem;
     color: #1e3c6f;
-    ;
     background-color: #f4d633;
 
 }
@@ -287,20 +297,18 @@ footer {
 }
 
 .footer-time {
-    font-size: 16rem;
-    line-height: 14rem;
+    font-size: 13rem;
     color: #1e3c6f;
     font-weight: bold;
     font-family: "Arial";
 }
 
-.footer-p1 {
-    margin-bottom: 13rem;
+.footer-time {
+    min-width: fit-content;
 }
 
-.footer-p {
-    font-size: 9rem;
-    min-width: none;
+.footer-p1 {
+    margin-bottom: 13rem;
 }
 
 .imgs {
@@ -309,9 +317,9 @@ footer {
     gap: 10rem;
 }
 
-.imgs-img img{
+.imgs-img img {
     display: block;
-    min-width: 15rem
+    max-width: 25rem
 }
 
 li img {
@@ -335,25 +343,24 @@ li:hover img {
     justify-content: flex-end;
 }
 
-@media screen and (min-width: 700px) {
-    .ball {
-        display: block;
+@media screen and (min-width: 425px) {
+    .tel {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20rem;
+        font-size: 16rem;
+        line-height: 50rem;
+    }
+
+    .footer-time {
+        font-size: 16rem;
     }
 }
 
-@media screen and (min-width: 768px) {
-    html {
-        font-size: .9px;
-    }
-
-    header {
-        padding-top: 19rem;
-        margin-bottom: 153rem;
-    }
-
-    .main {
-        position: relative;
-        margin-bottom: 130rem;
+@media screen and (min-width: 705px) {
+    .ball {
+        display: block;
     }
 
     .burger {
@@ -362,6 +369,9 @@ li:hover img {
 
     .top-line {
         background-color: transparent;
+        min-width: 438rem;
+        padding: 15px 10px;
+        border-radius: 20px;
     }
 
     .menu {
@@ -386,12 +396,37 @@ li:hover img {
         display: none;
     }
 
+    header {
+        padding-top: 19rem;
+        margin-bottom: 153rem;
+    }
+
+    .main {
+        position: relative;
+        margin-bottom: 130rem;
+    }
+
     h1 {
         box-sizing: border-box;
-        max-width: 692rem;
+        min-width: 692rem;
         font-size: 48rem;
         text-transform: uppercase;
         font-weight: 800;
+    }
+
+    .text {
+        box-sizing: border-box;
+        font-size: 30rem;
+    }
+
+    .text2 {
+        box-sizing: border-box;
+        font-size: 20rem;
+        font-weight: bold;
+    }
+
+    .text2 img {
+        min-width: 99px;
     }
 
     .logo-mobile img {
@@ -405,6 +440,12 @@ li:hover img {
 
     .imgs-img {
         min-width: 25rem
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: .9px;
     }
 }
 
