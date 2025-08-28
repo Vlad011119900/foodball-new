@@ -157,7 +157,7 @@ a {
 
 header {
     padding-top: 19rem;
-    margin-bottom: 25rem;
+    margin-bottom: 25vh;
 }
 
 .headerp {
@@ -194,7 +194,7 @@ ul {
 
 .main {
     position: relative;
-    margin-bottom: 70rem;
+    margin-bottom: 70vh;
 }
 
 .main_text {
