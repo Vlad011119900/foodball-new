@@ -109,11 +109,13 @@ a {
 
 .menu {
     position: fixed;
+    min-width: 90px;
+    max-height: 215px;
     top: 0;
     left: -1000%;
     z-index: 2;
     background-color: rgba(172, 172, 170, 0.3);
-    border: rgba(30, 30, 30, 0.3) 3px solid;
+    border-radius: 10px;
     transition: all .5s ease;
 }
 
