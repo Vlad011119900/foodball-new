@@ -137,7 +137,6 @@ a {
 }
 
 .menu li {
-
     padding: 15px 10px;
 }
 
@@ -150,6 +149,7 @@ a {
 }
 
 header {
+    height: 30vw;
     padding-top: 19rem;
     margin-bottom: 10vh;
 }
