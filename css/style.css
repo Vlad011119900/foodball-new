@@ -149,7 +149,6 @@ a {
 }
 
 header {
-    height: 30vw;
     padding-top: 19rem;
     margin-bottom: 10vh;
 }
@@ -279,11 +278,10 @@ nav a {
 }
 
 footer {
-    padding: 14rem 0;
+    padding: 14rem 0 15vw;
     font-size: 16rem;
     color: #1e3c6f;
     background-color: #f4d633;
-
 }
 
 .footer {
@@ -341,9 +339,9 @@ li:hover img {
 }
 
 @media screen and (min-width: 425px) {
-html {
-    font-size: .85px;
-}
+    html {
+        font-size: .85px;
+    }
 
     .tel {
         display: flex;
@@ -447,6 +445,13 @@ html {
 
     .ball {
         display: block;
+    }
+
+    footer {
+        padding: 14rem 0;
+        font-size: 16rem;
+        color: #1e3c6f;
+        background-color: #f4d633;
     }
 }
 
