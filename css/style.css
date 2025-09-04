@@ -189,6 +189,7 @@ ul {
 }
 
 .main {
+    overflow: hidden;
     position: relative;
     min-height: 56vh;
 }
