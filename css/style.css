@@ -119,6 +119,10 @@ a {
     transition: all .5s ease;
 }
 
+.menu li:hover a {
+    transform: scale(1.2);
+}
+
 .menu a {
     font-size: 14rem;
     line-height: 30rem;
@@ -358,7 +362,7 @@ li:hover img {
         display: none;
     }
 
-    .liinmenu {
+    .telinmenu {
         display: none;
     }
 
@@ -444,11 +448,7 @@ li:hover img {
         display: block;
     }
 
-    .main {
-        position: relative;
-        min-height: 40vw;
-    }
-
+    
     footer {
         padding: 14rem 0;
         font-size: 16rem;
@@ -461,9 +461,14 @@ li:hover img {
     html {
         font-size: 1px;
     }
-
+    
     .menu {
         min-width: 438px;
+    }
+
+    .main {
+        position: relative;
+        min-height: 56vw;
     }
 }
 
