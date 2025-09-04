@@ -22,7 +22,7 @@ body a {
     cursor: url('../img/cursor2.cur'), auto;
 }
 
-.da{
+.da {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -148,7 +148,7 @@ a {
 }
 
 .menu li {
-    padding: 15px 10px;
+    padding: 30rem 20rem;
 }
 
 
@@ -202,7 +202,12 @@ ul {
 .main {
     overflow: hidden;
     position: relative;
-    min-height: 56vh;
+    height: 100%;
+}
+
+.main-mobile {
+    display: flex;
+    align-items: center;
 }
 
 h1 {
@@ -277,15 +282,14 @@ nav a {
     max-width: 99rem;
 }
 
-.ball {
+.ball img {
     display: none;
     position: absolute;
     z-index: -1;
     right: 0%;
-    bottom: -1%;
-    width: 100%;
+    bottom: 0%;
     height: 100%;
-    width: 450rem;
+    min-width: 400rem;
 }
 
 footer {
@@ -356,6 +360,10 @@ li:hover img {
 
     .footer-time {
         font-size: 16rem;
+    }
+
+    .main-mobile {
+        display: none;
     }
 }
 
@@ -453,11 +461,11 @@ li:hover img {
         margin-bottom: 45rem;
     }
 
-    .ball {
+    .ball img {
         display: block;
     }
 
-    
+
     footer {
         padding: 14rem 0;
         font-size: 16rem;
@@ -470,14 +478,13 @@ li:hover img {
     html {
         font-size: 1px;
     }
-    
+
     .menu {
         min-width: 438px;
     }
 
     .main {
         position: relative;
-        min-height: 56vw;
     }
 }
 
@@ -485,16 +492,25 @@ li:hover img {
     html {
         font-size: 1.1px;
     }
+
+    .text2 img {
+        min-width: 100rem;
+    }
 }
 
 @media screen and (min-width: 1920px) {
     html {
-        font-size: 1.3px;
+        font-size: 1.5px;
+    }
+
+    .imgs-img img {
+        display: block;
+        min-width: 25rem;
     }
 }
 
 @media screen and (min-width: 2200px) {
     html {
-        font-size: 1.5px;
+        font-size: 1.7px;
     }
 }
