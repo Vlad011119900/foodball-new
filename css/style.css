@@ -162,7 +162,6 @@ a {
 header {
     padding-top: 19rem;
     min-height: 5vh;
-    margin-bottom: 45rem;
 }
 
 .headerp {
@@ -287,6 +286,7 @@ nav a {
     z-index: -1;
     right: 0%;
     bottom: 0%;
+    height: 100%;
 }
 
 .ball img {
@@ -460,11 +460,6 @@ li:hover img {
         font-size: .9px;
     }
 
-    .header {
-        min-height: 5vw;
-        margin-bottom: 45rem;
-    }
-
     .ball img {
         display: block;
     }
@@ -508,6 +503,11 @@ li:hover img {
     }
 
     .imgs-img img {
+        display: block;
+        min-width: 25rem;
+    }
+
+    .tel img{
         display: block;
         min-width: 25rem;
     }
