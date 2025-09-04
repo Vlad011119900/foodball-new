@@ -156,6 +156,13 @@ a {
     padding: 30rem 20rem;
 }
 
+.menu li a{
+    transition: .7s;
+}
+
+.menu li:hover>a {
+    color: #f4d633;
+}
 
 .header {
     position: relative;
