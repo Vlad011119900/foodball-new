@@ -202,7 +202,7 @@ ul {
 .main {
     overflow: hidden;
     position: relative;
-    height: 100%;
+    padding: 150rem 0;
 }
 
 .main-mobile {
@@ -282,14 +282,18 @@ nav a {
     max-width: 99rem;
 }
 
-.ball img {
-    display: none;
+.ball {
     position: absolute;
     z-index: -1;
     right: 0%;
     bottom: 0%;
+}
+
+.ball img {
+    display: none;
     height: 100%;
-    min-width: 400rem;
+    width: 100%;
+    min-width: 460rem;
 }
 
 footer {
