@@ -363,7 +363,7 @@ li:hover img {
     }
 
     .main-mobile {
-        display: none;
+        display: block;
     }
 }
 
