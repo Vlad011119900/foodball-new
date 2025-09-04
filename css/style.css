@@ -22,6 +22,10 @@ body a {
     cursor: url('../img/cursor2.cur'), auto;
 }
 
+.oh {
+    overflow: hidden;
+}
+
 .wrapper {
     margin: 0 auto;
     padding: 0 15rem;
@@ -109,8 +113,8 @@ a {
 
 .menu {
     position: fixed;
-    min-width: 90px;
-    max-height: 215px;
+    min-width: 45vw;
+    min-height: 100%;
     top: 0;
     left: -1000%;
     z-index: 2;
@@ -150,7 +154,8 @@ a {
 
 header {
     padding-top: 19rem;
-    margin-bottom: 10vh;
+    min-height: 5vh;
+    margin-bottom: 45rem;
 }
 
 .headerp {
@@ -162,7 +167,7 @@ ul {
 }
 
 .tel {
-    display: flex;
+    display: none;
     align-items: center;
     flex-wrap: wrap;
     gap: 15rem;
@@ -189,11 +194,7 @@ ul {
 
 .main {
     position: relative;
-    margin-bottom: 15vh;
-}
-
-.main_text {
-    height: 50vh;
+    min-height: 50vh;
 }
 
 h1 {
@@ -274,11 +275,11 @@ nav a {
     content: "";
     z-index: -1;
     right: 0%;
-    bottom: -45%;
+    bottom: -1%;
 }
 
 footer {
-    padding: 14rem 0 15vw;
+    padding: 14rem 0;
     font-size: 16rem;
     color: #1e3c6f;
     background-color: #f4d633;
@@ -343,21 +344,12 @@ li:hover img {
         font-size: .85px;
     }
 
-    .tel {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20rem;
-        font-size: 16rem;
-        line-height: 50rem;
-    }
-
     .footer-time {
         font-size: 16rem;
     }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 700px) {
 
     .flex-between {
         display: flex;
@@ -366,6 +358,10 @@ li:hover img {
     }
 
     .burger {
+        display: none;
+    }
+
+    .liinmenu {
         display: none;
     }
 
@@ -391,14 +387,13 @@ li:hover img {
         display: none;
     }
 
-    header {
-        padding-top: 19rem;
-        margin-bottom: 153rem;
-    }
-
-    .main {
-        position: relative;
-        margin-bottom: 130rem;
+    .tel {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20rem;
+        font-size: 16rem;
+        line-height: 50rem;
     }
 
     h1 {
@@ -443,8 +438,18 @@ li:hover img {
         font-size: .9px;
     }
 
+    .header {
+        min-height: 5vw;
+        margin-bottom: 45rem;
+    }
+
     .ball {
         display: block;
+    }
+
+    .main {
+        position: relative;
+        min-height: 40vw;
     }
 
     footer {
