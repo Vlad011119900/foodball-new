@@ -22,10 +22,6 @@ body a {
     cursor: url('../img/cursor2.cur'), auto;
 }
 
-.oh {
-    overflow: hidden;
-}
-
 .wrapper {
     margin: 0 auto;
     padding: 0 15rem;
@@ -119,7 +115,7 @@ a {
     left: -1000%;
     z-index: 2;
     background-color: rgba(172, 172, 170, 0.3);
-    border-radius: 10px;
+    border-radius: 0 10px 0 0;
     transition: all .5s ease;
 }
 
@@ -194,7 +190,7 @@ ul {
 
 .main {
     position: relative;
-    min-height: 50vh;
+    min-height: 56vh;
 }
 
 h1 {
