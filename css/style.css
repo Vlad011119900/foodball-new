@@ -35,8 +35,13 @@ body a {
     max-width: 1000rem;
 }
 
+.align-items{
+    display: flex;
+    align-items: center;
+}
+
 .flex-between {
-    display: none;
+    display: flex;
     justify-content: space-between;
     gap: 10px;
 }
@@ -161,7 +166,6 @@ a {
 
 header {
     padding-top: 19rem;
-    min-height: 5vh;
 }
 
 .headerp {
@@ -372,13 +376,6 @@ li:hover img {
 }
 
 @media screen and (min-width: 700px) {
-
-    .flex-between {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
     .burger {
         display: none;
     }
